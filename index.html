@@ -123,7 +123,7 @@
                 <button class="tool-button" id="edgeStyle" title="Cambiar Estilo de Borde"><i class="fas fa-pencil-alt"></i></button>
                 <div class="dropdown-content">
                     <button data-style="solid">Línea Sólida</button>
-                    <button data-style="dotted">Línea Punteada</button>
+                    <button data-style="dashed">Línea Discontinua</button>
                     <button data-style="arrow-right">Flecha a la Derecha</button>
                     <button data-style="arrow-left">Flecha a la Izquierda</button>
                     <button data-style="arrow-both">Flechas en Ambos Lados</button>
@@ -287,8 +287,8 @@
                 edge.style('source-arrow-shape', 'none');
                 if (selectedEdgeStyle === 'solid') {
                     edge.style('line-style', 'solid');
-                } else if (selectedEdgeStyle === 'dotted') {
-                    edge.style('line-style', 'dotted');
+                } else if (selectedEdgeStyle === 'dashed') {
+                    edge.style('line-style', 'dashed');
                 } else if (selectedEdgeStyle === 'arrow-right') {
                     edge.style('target-arrow-shape', 'triangle');
                 } else if (selectedEdgeStyle === 'arrow-left') {
